@@ -17,12 +17,7 @@ namespace TesteMicroOndasAdriane
         Programas prog = new Programas();
         ListaProgramasModel listprog = new ListaProgramasModel();
         public List<ListaProgramasModel> ListaProgramas = new List<ListaProgramasModel>();
-
-        public virtual void onAquecido(EventArgs e)
-        {
-            if (AquecidoFim != null)
-                AquecidoFim(this, e);
-        }
+ 
         /**
          * Propriedades
          * 
