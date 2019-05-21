@@ -107,8 +107,16 @@ namespace TesteMicroOndasAdriane
             txtdisplay.Text = "";
             Programas prog = new Programas();
             string ret;
+
+            if (txtempo.Text == "")
+                prog.tempo = 0;
+            else
             prog.tempo = int.Parse(txtempo.Text);
-            prog.potencia = int.Parse(txtpotencia.Text);
+
+            if (txtpotencia.Text == "")            
+                prog.potencia = 0;
+            else
+                prog.potencia = int.Parse(txtpotencia.Text);
             
 
             /**
